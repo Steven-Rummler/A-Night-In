@@ -1,0 +1,213 @@
+/*html { 
+    background: url(tokyo.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}*/
+
+body {
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.my-container {
+    position: relative;
+    /*overflow: hidden;*/
+}
+
+.my-container img {
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    width: auto;
+    height: 100vh;
+    opacity: 1;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+#titlefiller {
+    color: white;
+    font-size: 3rem;
+    opacity: 0;
+    font-family: arial;
+    font-weight: bold;  
+}
+
+#actualtitle {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    padding: 8px;
+    transform: translateX(-55%);
+}
+
+#cardtitle {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    opacity: 1;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    padding: 8px;
+    transform: translateX(-50%);
+}
+
+#card {
+    padding: 8px;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 30%;
+}
+
+.titlecard {
+    padding: 8px;
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 80px;
+}
+
+#begin {
+    display: block;
+    background-color: darkgrey;
+    padding: 4px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 100;
+    color: #FFF;
+    font-family: arial;
+    padding: 8px 16px;
+    background-color: black;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.navbar {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: arial;
+    font-size: 1.4em;
+}
+
+a:hover {
+    background-color: #777;
+}
+
+#begin:hover {
+    background-color: #777;
+}
+
+.content {
+    position: absolute;
+    padding: 20px;
+    margin: 20px 0px 20px 0px;
+    top: 140px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.textbox {
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+    font-family: arial;
+    font-size: 1.2em;
+    z-index: 1;
+    margin: 0px 50px 40px 50px;
+    padding: 20px;
+    position: relative;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+/* CSS for Contact Form */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+  
+  /* Style the submit button with a specific background color etc */
+  input[type=submit] {
+    background-color: black;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: arial;
+    font-size: 1rem;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  
+  /* When moving the mouse over the submit button, add a darker green color */
+  input[type=submit]:hover {
+    background-color: #777;
+  }
+  
+  /* Add a background color and some padding around the form */
+  .container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+    font-family: arial;
+  }
